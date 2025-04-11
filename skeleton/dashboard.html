@@ -3,29 +3,631 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="common.css" />
   </head>
   <body>
-    <div class="dashboard-wrapper">
+    <div class="wrapper dashboard-wrapper">
       <div class="main-area">
-        <aside>
+        <aside class="main-menu">
           <ul>
             <li class="active"><img src="../public/home.svg" />Dashboard</li>
+            <li><img src="../public/view_list.svg" />Courses</li>
             <li><img src="../public/course.svg" />My Course</li>
-            <li><img src="../public/task.svg" />TO-DO</li>
-            <li><img src="../public/calendar.svg" />Calendar</li>
             <li><img src="../public/mypage.svg" />My Page</li>
+            <li><img src="../public/settings.svg" />Settings</li>
             <li class="last"><img src="../public/logout.svg" />Logout</li>
           </ul>
         </aside>
         <main>
-          <div class="header">
-            <h2>kt ds Universtiry 25th</h2>
+          <div class="header horizontal-list">
+            <h2>Learn It All</h2>
+            <div class="header-icons">
+              <ul class="horizontal-list">
+                <li>장민창 (강사)</li>
+                <li><img src="../public/noti.svg" /></li>
+                <li><img src="../public/send.svg" /></li>
+                <li><img src="../public/mypage.svg" /></li>
+                <li><img src="../public/settings.svg" /></li>
+                <li><img src="../public/logout.svg" /></li>
+              </ul>
+            </div>
           </div>
           <div class="sub-header">
-            <h3>풀스택 웹 애플리케이션 개발 전문가 양성과정</h3>
+            <h3>
+              <a
+                target="_blank"
+                title="github 바로가기"
+                href="https://github.com/CodeMakers-KR/kt-ds-University-25"
+              >
+                풀스택 웹 애플리케이션 개발 전문가 양성과정
+              </a>
+            </h3>
             <h4>(2025.01.17 - 2025.06.17)</h4>
+          </div>
+          <div>
+            <progress min="1" max="100" value="55"></progress>
+          </div>
+          <div class="inline-calendar">
+            <ul class="horizontal-list">
+              <li class="vertical-list no-gap">
+                <div class="month">4월</div>
+                <div class="day">금</div>
+                11
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                12
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                13
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                14
+              </li>
+              <li class="vertical-list no-gap today">
+                <div class="day">화</div>
+                15
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                16
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">목</div>
+                17
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                18
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                19
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                20
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                21
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">화</div>
+                22
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                23
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">목</div>
+                24
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                25
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                26
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                27
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                28
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">화</div>
+                29
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                30
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="month">5월</div>
+                <div class="day">목</div>
+                1
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                2
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                3
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                4
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                5
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">화</div>
+                6
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                7
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">목</div>
+                8
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                9
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                10
+              </li>
+            </ul>
+          </div>
+          <div class="horizontal-list">
+            <div class="vertical-list half">
+              <section class="field stretch-content">
+                <h4>학습 지원</h4>
+                <div class="horizontal-list flex-wrap">
+                  <a href="#">질문하기</a>
+                  <a href="#">White board시작</a>
+                  <a href="#">투표시작</a>
+                </div>
+              </section>
+              <section class="field stretch-content">
+                <h4>오늘의 Schedule</h4>
+                <div class="horizontal-list flex-wrap">
+                  <a href="#">Spring Web MVC</a>
+                  <a href="#">Spring Parameter</a>
+                  <a href="#">Path Variable</a>
+                  <a href="#">Request Param</a>
+                  <a href="#">Validation</a>
+                  <a href="#">Autowired</a>
+                </div>
+              </section>
+            </div>
+
+            <section class="field half fit-content">
+              <h4>Todo</h4>
+              <div class="horizontal-list">
+                <section class="half">
+                  <h5>YESTERDAY</h5>
+                  <ul>
+                    <li class="todo-done">
+                      <input type="checkbox" checked disabled />asdlkjf
+                    </li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li class="todo-done">
+                      <input type="checkbox" checked disabled />asdlkjf
+                    </li>
+                  </ul>
+                </section>
+                <section class="half">
+                  <h5>TODAY</h5>
+                  <ul>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                  </ul>
+                </section>
+                <section class="half">
+                  <h5>INCOMMING</h5>
+                  <ul>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                  </ul>
+                </section>
+              </div>
+            </section>
+          </div>
+
+          <div class="sub-header">
+            <h3>
+              <a
+                target="_blank"
+                title="github 바로가기"
+                href="https://github.com/CodeMakers-KR/kt-ds-University-25"
+              >
+                풀스택 웹 애플리케이션 개발 전문가 양성과정
+              </a>
+            </h3>
+            <h4>(2025.01.17 - 2025.06.17)</h4>
+          </div>
+          <div>
+            <progress min="1" max="100" value="55"></progress>
+          </div>
+          <div class="inline-calendar">
+            <ul class="horizontal-list">
+              <li class="vertical-list no-gap">
+                <div class="month">4월</div>
+                <div class="day">금</div>
+                11
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                12
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                13
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                14
+              </li>
+              <li class="vertical-list no-gap today">
+                <div class="day">화</div>
+                15
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                16
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">목</div>
+                17
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                18
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                19
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                20
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                21
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">화</div>
+                22
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                23
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">목</div>
+                24
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                25
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                26
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                27
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                28
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">화</div>
+                29
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                30
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="month">5월</div>
+                <div class="day">목</div>
+                1
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                2
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                3
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                4
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                5
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">화</div>
+                6
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                7
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">목</div>
+                8
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                9
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                10
+              </li>
+            </ul>
+          </div>
+          <div class="horizontal-list">
+            <div class="vertical-list half">
+              <section class="field stretch-content">
+                <h4>학습 지원</h4>
+                <div class="horizontal-list flex-wrap">
+                  <a href="#">질문하기</a>
+                  <a href="#">White board시작</a>
+                  <a href="#">투표시작</a>
+                </div>
+              </section>
+              <section class="field stretch-content">
+                <h4>오늘의 Schedule</h4>
+                <div class="horizontal-list flex-wrap">
+                  <a href="#">Spring Web MVC</a>
+                  <a href="#">Spring Parameter</a>
+                  <a href="#">Path Variable</a>
+                  <a href="#">Request Param</a>
+                  <a href="#">Validation</a>
+                  <a href="#">Autowired</a>
+                </div>
+              </section>
+            </div>
+
+            <section class="field half fit-content">
+              <h4>Todo</h4>
+              <div class="horizontal-list">
+                <section class="half">
+                  <h5>YESTERDAY</h5>
+                  <ul>
+                    <li class="todo-done">
+                      <input type="checkbox" checked disabled />asdlkjf
+                    </li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li class="todo-done">
+                      <input type="checkbox" checked disabled />asdlkjf
+                    </li>
+                  </ul>
+                </section>
+                <section class="half">
+                  <h5>TODAY</h5>
+                  <ul>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                  </ul>
+                </section>
+                <section class="half">
+                  <h5>INCOMMING</h5>
+                  <ul>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                  </ul>
+                </section>
+              </div>
+            </section>
+          </div>
+
+          <div class="sub-header">
+            <h3>
+              <a
+                target="_blank"
+                title="github 바로가기"
+                href="https://github.com/CodeMakers-KR/kt-ds-University-25"
+              >
+                풀스택 웹 애플리케이션 개발 전문가 양성과정
+              </a>
+            </h3>
+            <h4>(2025.01.17 - 2025.06.17)</h4>
+          </div>
+          <div>
+            <progress min="1" max="100" value="55"></progress>
+          </div>
+          <div class="inline-calendar">
+            <ul class="horizontal-list">
+              <li class="vertical-list no-gap">
+                <div class="month">4월</div>
+                <div class="day">금</div>
+                11
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                12
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                13
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                14
+              </li>
+              <li class="vertical-list no-gap today">
+                <div class="day">화</div>
+                15
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                16
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">목</div>
+                17
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                18
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                19
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                20
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                21
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">화</div>
+                22
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                23
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">목</div>
+                24
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                25
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                26
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                27
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                28
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">화</div>
+                29
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                30
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="month">5월</div>
+                <div class="day">목</div>
+                1
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                2
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                3
+              </li>
+              <li class="vertical-list no-gap font-red">
+                <div class="day">일</div>
+                4
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">월</div>
+                5
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">화</div>
+                6
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">수</div>
+                7
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">목</div>
+                8
+              </li>
+              <li class="vertical-list no-gap">
+                <div class="day">금</div>
+                9
+              </li>
+              <li class="vertical-list no-gap font-blue">
+                <div class="day">토</div>
+                10
+              </li>
+            </ul>
+          </div>
+          <div class="horizontal-list">
+            <div class="vertical-list half">
+              <section class="field stretch-content">
+                <h4>학습 지원</h4>
+                <div class="horizontal-list flex-wrap">
+                  <a href="#">질문하기</a>
+                  <a href="#">White board시작</a>
+                  <a href="#">투표시작</a>
+                </div>
+              </section>
+              <section class="field stretch-content">
+                <h4>오늘의 Schedule</h4>
+                <div class="horizontal-list flex-wrap">
+                  <a href="#">Spring Web MVC</a>
+                  <a href="#">Spring Parameter</a>
+                  <a href="#">Path Variable</a>
+                  <a href="#">Request Param</a>
+                  <a href="#">Validation</a>
+                  <a href="#">Autowired</a>
+                </div>
+              </section>
+            </div>
+
+            <section class="field half fit-content">
+              <h4>Todo</h4>
+              <div class="horizontal-list">
+                <section class="half">
+                  <h5>YESTERDAY</h5>
+                  <ul>
+                    <li class="todo-done">
+                      <input type="checkbox" checked disabled />asdlkjf
+                    </li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li class="todo-done">
+                      <input type="checkbox" checked disabled />asdlkjf
+                    </li>
+                  </ul>
+                </section>
+                <section class="half">
+                  <h5>TODAY</h5>
+                  <ul>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                  </ul>
+                </section>
+                <section class="half">
+                  <h5>INCOMMING</h5>
+                  <ul>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                    <li><input type="checkbox" />asdlkjf</li>
+                  </ul>
+                </section>
+              </div>
+            </section>
           </div>
         </main>
       </div>
