@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+button {
+  border-radius: 0.3rem;
+  outline: none;
+  padding: 0.625rem;
+  border: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #fff;
+  color: #39dc75;
+}
+.btn:hover {
+  background-color: #39dc75;
+  color: #fff;
+}
+
+.positive-btn {
+  background-color: #fff;
+  color: #3990dc;
+}
+
+.positive-btn:hover {
+  background-color: #3990dc;
+  color: #fff;
+}
+
+.negative-btn {
+  background-color: #fff;
+  color: #dc3939;
+}
+.negative-btn:hover {
+  background-color: #dc3939;
+  color: #fff;
+}
+
+.warning-btn {
+  background-color: #fff;
+  color: #a7b825;
+}
+.warning-btn:hover {
+  background-color: #a7b825;
+  color: #fff;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.right > .first {
+  flex-grow: 1;
+  align-self: flex-start;
+}
+
+input {
+  background-color: #99c1e411;
+  border: 0;
+  border-bottom: 1px solid #0b6abe90;
+  padding: 0.625rem;
+  outline: none;
+  color: #0b6bbe;
+}
+input:focus {
+  background-color: #f7d5d511;
+}
+label {
+  color: #0b6bbe;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  min-width: 31rem;
+  margin: 0 auto;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+
+  .input {
+    margin: 1rem 0;
+
+    label {
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 0.315rem;
+    }
+    input {
+      padding: 0.625rem;
+      width: 100%;
+    }
+  }
+
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    img {
+      max-width: 4rem;
+      min-width: 4rem;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 3.5rem;
+      color: #0b6bbe;
+      font-weight: 900;
+    }
+  }
+}
+
+.secret {
+  display: flex;
+  gap: 1rem;
+  input {
+    border-radius: 0.315rem;
+    flex-basis: auto;
+    text-align: center;
+    border: 1px solid #0b6abe90;
+    font-size: 3rem;
+    appearance: none;
+  }
+}
+
+.dashboard-wrapper {
+  .header {
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.8rem;
+    position: fixed;
+    top: 0;
+    left: 6rem;
+    right: 0;
+
+    padding-top: 2rem;
+    padding-left: 4rem;
+  }
+
+  .main-area {
+    display: flex;
+    height: 100vh;
+
+    aside {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 6rem;
+      padding-top: 2rem;
+      flex-basis: 6rem;
+      flex-shrink: 0;
+      overflow: auto;
+      background-color: #eff1f8;
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+        font-size: 0.75rem;
+        font-weight: 600;
+        list-style: none;
+        height: 95%;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 1rem 0;
+          img {
+            width: 30px;
+          }
+          img:hover {
+            cursor: pointer;
+          }
+        }
+        li.active {
+          background-color: #fff;
+          color: #000;
+        }
+        li:hover {
+          background-color: #fff;
+        }
+
+        li.last {
+          flex-grow: 1;
+        }
+        li.last:hover {
+          background-color: #eff1f8;
+        }
+      }
+    }
+
+    main {
+      padding-top: 5rem;
+      flex-grow: 1;
+      padding-left: 10rem;
+
+      .sub-header {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.7rem;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.5rem;
+}
